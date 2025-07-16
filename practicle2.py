@@ -1,8 +1,8 @@
 print("Student Course Suggestion System")
 print("Subjects you can choose from:")
-print("1. maths 2.physics 3.programming 3.graphics 4.circuits 5.statistics 6.ai")
-fav1 = input("Enter your favorite subject first (subject should only maths or statistics): ")
-fav2 = input("Enter your favorite subject second : ")
+print("1. maths 2. physics 3. programming 4. graphics 5. circuits 6. statistics 7. ai")
+fav1 = input("Enter your favorite subject first (subject should only be maths or statistics): ").strip().upper()
+fav2 = input("Enter your favorite subject second: ").strip().upper()
 if fav1 == "MATHS" and fav2 == "PHYSICS":
    print("You can choose Engineering Science.")
 elif fav1 == "MATHS" and fav2 == "PROGRAMMING":
@@ -19,4 +19,3 @@ elif fav1 == "MATHS" and fav2 == "AI":
    print("You can choose RO&AI Engineering.")
 else:
    print("Sorry, no suggestions available for this combination.")
-
